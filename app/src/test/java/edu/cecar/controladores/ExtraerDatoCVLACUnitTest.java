@@ -43,17 +43,17 @@ public class ExtraerDatoCVLACUnitTest {
 
     @Test
     public void testDatosCvlac() {
-        // Se obtienen los datos del investigador
+
         Investigador investigador = ExtraerDatoCVLAC.getDatos("http://scienti.colciencias.gov.co:8081/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000402478");
-        //Se definen los datos esperados
+
         String nombreInvestigador = "Luty Del Carmen Gomezcaceres Peréz";
-        // Se comprueba o testea el valor esperado con el obtenido
+
         assertEquals(nombreInvestigador, investigador.getNombres());
     }
 
     @Test
     public void testLineaInvestigacion() {
-        // Verificar si las lineas de investigacion corresponden con la solicitada
+
         ArrayList<String> lineas = new ArrayList<>();
         lineas = ExtraerDatoCVLAC.getLineasInvestigacion("http://scienti.colciencias.gov.co:8081/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000402478");
         for (int i = 0; i < lineas.size(); i++) {

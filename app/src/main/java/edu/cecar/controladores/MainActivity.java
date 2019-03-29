@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Se referencias los elementos graficos
+
         teNombres = findViewById(R.id.teNombres);
         teNacionalidad = findViewById(R.id.teNacionalidad);
         teSexo = findViewById(R.id.teSexo);

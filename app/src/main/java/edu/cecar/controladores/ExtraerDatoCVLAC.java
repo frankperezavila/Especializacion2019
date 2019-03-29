@@ -56,7 +56,7 @@ public class ExtraerDatoCVLAC {
     }
 
     public static ArrayList<String> getLineasInvestigacion(String url){
-        //Se obtiene el documento HTML
+
         Document documentoHTML = null;
         Elements listaTablas;
         try {
