@@ -13,9 +13,7 @@
 
 package edu.cecar.controladores;
 
-/**
-  Esta clase modela los datos de un Investigador
-*/
+
 
 public class Investigador {
 

@@ -21,11 +21,11 @@ public class ExtraerDatoCVLAC {
 
         try {
 
-            //Se obtiene el documento HTML
+
             Document documentoHTML = Jsoup.connect(url).get();
 
-            Element tDatosPersonales = documentoHTML.select("table").get(1); //Se obtiene la segunda tabla
-            Elements filasTabla = tDatosPersonales.select("tr"); // Se obtienen las filas de la tabla
+            Element tDatosPersonales = documentoHTML.select("table").get(1);
+            Elements filasTabla = tDatosPersonales.select("tr"); //
 
             int  filaNombre = 0;
             int filaNacionalidad = 2;
