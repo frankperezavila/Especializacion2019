@@ -11,6 +11,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <Button
+            android:id="@+id/btObtenerDatos"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Obtener Datos CVLAC"
+            android:theme="@style/PrimaryFlatButton" />
+
         <android.support.design.widget.TextInputLayout
             android:id="@+id/tiNombres"
             android:layout_width="match_parent"
@@ -54,33 +61,28 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/categorizado" />
+
+                        <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/listViewLInvestigacion"/>
+
                     </android.support.design.widget.TextInputLayout>
                 </android.support.design.widget.TextInputLayout>
             </android.support.design.widget.TextInputLayout>
         </android.support.design.widget.TextInputLayout>
 
+
     </LinearLayout>
 
 
     <!-- Bottom Bar -->
-    <LinearLayout
+    <!--<LinearLayout
         android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:layout_alignParentBottom="true"
         android:gravity="center_vertical"
         android:orientation="horizontal">
-
-
-        <Button
-            android:id="@+id/btObtenerDatos"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Obtener Datos CVLAC"
-            android:theme="@style/PrimaryFlatButton"
-            />
-
-    </LinearLayout>
+    </LinearLayout>-->
 
 </RelativeLayout>

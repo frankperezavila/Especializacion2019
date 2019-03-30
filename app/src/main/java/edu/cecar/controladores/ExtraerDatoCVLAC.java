@@ -12,7 +12,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ExtraerDatoCVLAC {
-    private static ArrayList<String> lineasInvestingaciones = new ArrayList<>();
 
 
     public static Investigador  getDatos(String url) {
@@ -56,7 +55,7 @@ public class ExtraerDatoCVLAC {
     }
 
     public static ArrayList<String> getLineasInvestigacion(String url){
-
+        ArrayList<String> lineaInvestingacion = new ArrayList<>();
         Document documentoHTML = null;
         Elements listaTablas;
         try {
@@ -68,7 +67,7 @@ public class ExtraerDatoCVLAC {
                     if(tr.text().equalsIgnoreCase("Líneas de investigación")){
                         Elements listas = listaTablas.get(i).select("li");
                         for (Element element : listas) {
-                            lineasInvestingaciones.add(element.text());
+                            lineaInvestingacion.add(element.text());
                         }
                     }
                 }
@@ -77,6 +76,6 @@ public class ExtraerDatoCVLAC {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return lineasInvestingaciones;
+        return lineaInvestingacion;
     }
 }
